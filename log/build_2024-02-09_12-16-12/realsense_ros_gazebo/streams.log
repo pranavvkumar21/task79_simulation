@@ -1,0 +1,41 @@
+[0.683s] Invoking command in '/home/xh339/Desktop/turtlebot_ws/build/realsense_ros_gazebo': /usr/bin/cmake /home/xh339/Desktop/turtlebot_ws/src/realsense_ros_gazebo -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/xh339/Desktop/turtlebot_ws/install/realsense_ros_gazebo
+[0.720s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.722s]   Compatibility with CMake < 2.8.12 will be removed from a future version of
+[0.723s]   CMake.
+[0.724s] 
+[0.724s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[0.724s]   CMake that the project does not need compatibility with older versions.
+[0.724s] 
+[0.724s] [0m
+[0.825s] -- The C compiler identification is GNU 11.4.0
+[0.930s] -- The CXX compiler identification is GNU 11.4.0
+[0.945s] -- Detecting C compiler ABI info
+[1.022s] -- Detecting C compiler ABI info - done
+[1.034s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.034s] -- Detecting C compile features
+[1.035s] -- Detecting C compile features - done
+[1.039s] -- Detecting CXX compiler ABI info
+[1.118s] -- Detecting CXX compiler ABI info - done
+[1.127s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.127s] -- Detecting CXX compile features
+[1.127s] -- Detecting CXX compile features - done
+[1.146s] [31mCMake Error at CMakeLists.txt:4 (find_package):
+[1.146s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[1.147s]   asked CMake to find a package configuration file provided by "catkin", but
+[1.147s]   CMake did not find one.
+[1.147s] 
+[1.148s]   Could not find a package configuration file provided by "catkin" with any
+[1.148s]   of the following names:
+[1.148s] 
+[1.149s]     catkinConfig.cmake
+[1.149s]     catkin-config.cmake
+[1.150s] 
+[1.150s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[1.150s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[1.151s]   provides a separate development package or SDK, be sure it has been
+[1.151s]   installed.
+[1.152s] 
+[1.152s] [0m
+[1.152s] -- Configuring incomplete, errors occurred!
+[1.153s] See also "/home/xh339/Desktop/turtlebot_ws/build/realsense_ros_gazebo/CMakeFiles/CMakeOutput.log".
+[1.268s] Invoked command in '/home/xh339/Desktop/turtlebot_ws/build/realsense_ros_gazebo' returned '1': /usr/bin/cmake /home/xh339/Desktop/turtlebot_ws/src/realsense_ros_gazebo -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/xh339/Desktop/turtlebot_ws/install/realsense_ros_gazebo
