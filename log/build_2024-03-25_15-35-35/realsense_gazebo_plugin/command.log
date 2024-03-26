@@ -1,0 +1,4 @@
+Invoking command in '/home/xh339/Desktop/turtlebot_ws/build/realsense_gazebo_plugin': /usr/bin/cmake --build /home/xh339/Desktop/turtlebot_ws/build/realsense_gazebo_plugin -- -j8 -l8
+Invoked command in '/home/xh339/Desktop/turtlebot_ws/build/realsense_gazebo_plugin' returned '0': /usr/bin/cmake --build /home/xh339/Desktop/turtlebot_ws/build/realsense_gazebo_plugin -- -j8 -l8
+Invoking command in '/home/xh339/Desktop/turtlebot_ws/build/realsense_gazebo_plugin': /usr/bin/cmake --install /home/xh339/Desktop/turtlebot_ws/build/realsense_gazebo_plugin
+Invoked command in '/home/xh339/Desktop/turtlebot_ws/build/realsense_gazebo_plugin' returned '0': /usr/bin/cmake --install /home/xh339/Desktop/turtlebot_ws/build/realsense_gazebo_plugin

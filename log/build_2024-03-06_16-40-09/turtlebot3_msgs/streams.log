@@ -1,0 +1,24 @@
+[0.451s] Invoking command in '/home/xh339/Desktop/turtlebot_ws/build/turtlebot3_msgs': CMAKE_PREFIX_PATH=/home/xh339/Desktop/ros2_ws/install/task79_interfaces:/home/xh339/Desktop/turtlebot_ws/install/turtlebot3_navigation2:/home/xh339/Desktop/turtlebot_ws/install/turtlebot3_msgs:/home/xh339/Desktop/turtlebot_ws/install/turtlebot3_gazebo:/home/xh339/Desktop/turtlebot_ws/install/turtlebot3_cartographer:/home/xh339/Desktop/ros2_ws/install/task79_wrappers:/home/xh339/Desktop/ros2_ws/install/task79_test:/home/xh339/Desktop/ros2_ws/install/task79:/home/xh339/Desktop/ros2_ws/install/aruco_detect:/home/xh339/Desktop/turtlebot_ws/install/turtlebot3_teleop:/home/xh339/dev_ws/install/learning_urdf:/home/xh339/dev_ws/install/learning_topic:/home/xh339/dev_ws/install/learning_tf:/home/xh339/dev_ws/install/learning_service:/home/xh339/dev_ws/install/learning_qos:/home/xh339/dev_ws/install/learning_pkg_python:/home/xh339/dev_ws/install/learning_parameter:/home/xh339/dev_ws/install/learning_node:/home/xh339/dev_ws/install/learning_launch:/home/xh339/dev_ws/install/learning_action:/home/xh339/dev_ws/install/learning_gazebo:/opt/ros/humble:/home/xh339/Desktop/turtlebot_ws/install/realsense_ros_gazebo:/home/xh339/dev_ws/install/learning_pkg_c:/home/xh339/dev_ws/install/learning_interface /usr/bin/cmake --build /home/xh339/Desktop/turtlebot_ws/build/turtlebot3_msgs -- -j8 -l8
+[0.535s] [  1%] Built target turtlebot3_msgs__cpp
+[0.540s] [ 12%] Built target turtlebot3_msgs__rosidl_generator_c
+[0.577s] [ 12%] Built target ament_cmake_python_copy_turtlebot3_msgs
+[0.584s] [ 23%] Built target turtlebot3_msgs__rosidl_typesupport_cpp
+[0.591s] [ 35%] Built target turtlebot3_msgs__rosidl_typesupport_fastrtps_cpp
+[0.592s] [ 46%] Built target turtlebot3_msgs__rosidl_typesupport_introspection_cpp
+[0.611s] [ 57%] Built target turtlebot3_msgs__rosidl_typesupport_introspection_c
+[0.611s] [ 69%] Built target turtlebot3_msgs__rosidl_typesupport_c
+[0.614s] [ 80%] Built target turtlebot3_msgs__rosidl_typesupport_fastrtps_c
+[0.634s] [ 80%] Built target turtlebot3_msgs
+[0.654s] [ 81%] Built target turtlebot3_msgs__py
+[0.692s] [ 91%] Built target turtlebot3_msgs__rosidl_generator_py
+[0.728s] [ 94%] Built target turtlebot3_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.736s] [100%] Built target turtlebot3_msgs__rosidl_typesupport_c__pyext
+[0.736s] [100%] Built target turtlebot3_msgs__rosidl_typesupport_introspection_c__pyext
+[0.972s] running egg_info
+[0.972s] writing turtlebot3_msgs.egg-info/PKG-INFO
+[0.972s] writing dependency_links to turtlebot3_msgs.egg-info/dependency_links.txt
+[0.972s] writing top-level names to turtlebot3_msgs.egg-info/top_level.txt
+[0.976s] reading manifest file 'turtlebot3_msgs.egg-info/SOURCES.txt'
+[0.977s] writing manifest file 'turtlebot3_msgs.egg-info/SOURCES.txt'
+[1.066s] [100%] Built target ament_cmake_python_build_turtlebot3_msgs_egg
+[1.195s] Invoked command in '/home/xh339/Desktop/turtlebot_ws/build/turtlebot3_msgs' returned '0': CMAKE_PREFIX_PATH=/home/xh339/Desktop/ros2_ws/install/task79_interfaces:/home/xh339/Desktop/turtlebot_ws/install/turtlebot3_navigation2:/home/xh339/Desktop/turtlebot_ws/install/turtlebot3_msgs:/home/xh339/Desktop/turtlebot_ws/install/turtlebot3_gazebo:/home/xh339/Desktop/turtlebot_ws/install/turtlebot3_cartographer:/home/xh339/Desktop/ros2_ws/install/task79_wrappers:/home/xh339/Desktop/ros2_ws/install/task79_test:/home/xh339/Desktop/ros2_ws/install/task79:/home/xh339/Desktop/ros2_ws/install/aruco_detect:/home/xh339/Desktop/turtlebot_ws/install/turtlebot3_teleop:/home/xh339/dev_ws/install/learning_urdf:/home/xh339/dev_ws/install/learning_topic:/home/xh339/dev_ws/install/learning_tf:/home/xh339/dev_ws/install/learning_service:/home/xh339/dev_ws/install/learning_qos:/home/xh339/dev_ws/install/learning_pkg_python:/home/xh339/dev_ws/install/learning_parameter:/home/xh339/dev_ws/install/learning_node:/home/xh339/dev_ws/install/learning_launch:/home/xh339/dev_ws/install/learning_action:/home/xh339/dev_ws/install/learning_gazebo:/opt/ros/humble:/home/xh339/Desktop/turtlebot_ws/install/realsense_ros_gazebo:/home/xh339/dev_ws/install/learning_pkg_c:/home/xh339/dev_ws/install/learning_interface /usr/bin/cmake --build /home/xh339/Desktop/turtlebot_ws/build/turtlebot3_msgs -- -j8 -l8

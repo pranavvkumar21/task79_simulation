@@ -43,7 +43,7 @@ def generate_launch_description():
         PythonLaunchDescriptionSource(
             os.path.join(pkg_gazebo_ros, 'launch', 'gzserver.launch.py')
         ),
-        launch_arguments={'world': world}.items()
+        launch_arguments={'world': world, 'log-level':'DEBUG'}.items()
     )
 
     gzclient_cmd = IncludeLaunchDescription(

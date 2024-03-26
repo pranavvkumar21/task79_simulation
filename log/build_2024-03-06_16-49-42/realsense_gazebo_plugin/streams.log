@@ -1,0 +1,31 @@
+[0.713s] Invoking command in '/home/xh339/Desktop/turtlebot_ws/build/realsense_gazebo_plugin': /usr/bin/cmake --build /home/xh339/Desktop/turtlebot_ws/build/realsense_gazebo_plugin -- -j8 -l8
+[0.775s] [35m[1mConsolidate compiler generated dependencies of target realsense_gazebo_plugin[0m
+[0.878s] [100%] Built target realsense_gazebo_plugin
+[1.237s] Invoked command in '/home/xh339/Desktop/turtlebot_ws/build/realsense_gazebo_plugin' returned '0': /usr/bin/cmake --build /home/xh339/Desktop/turtlebot_ws/build/realsense_gazebo_plugin -- -j8 -l8
+[1.630s] Invoking command in '/home/xh339/Desktop/turtlebot_ws/build/realsense_gazebo_plugin': /usr/bin/cmake --install /home/xh339/Desktop/turtlebot_ws/build/realsense_gazebo_plugin
+[1.640s] -- Install configuration: ""
+[1.641s] -- Up-to-date: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/lib/librealsense_gazebo_plugin.so
+[1.641s] -- Up-to-date: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/include/
+[1.641s] -- Up-to-date: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/include//realsense_gazebo_plugin
+[1.642s] -- Up-to-date: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/include//realsense_gazebo_plugin/gazebo_ros_realsense.hpp
+[1.642s] -- Up-to-date: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/include//realsense_gazebo_plugin/RealSensePlugin.hpp
+[1.642s] -- Up-to-date: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/environment/library_path.sh
+[1.642s] -- Up-to-date: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/environment/library_path.dsv
+[1.643s] -- Up-to-date: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/share/ament_index/resource_index/package_run_dependencies/realsense_gazebo_plugin
+[1.643s] -- Up-to-date: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/share/ament_index/resource_index/parent_prefix_path/realsense_gazebo_plugin
+[1.643s] -- Up-to-date: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/environment/ament_prefix_path.sh
+[1.643s] -- Up-to-date: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/environment/ament_prefix_path.dsv
+[1.643s] -- Up-to-date: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/environment/path.sh
+[1.644s] -- Up-to-date: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/environment/path.dsv
+[1.644s] -- Up-to-date: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/local_setup.bash
+[1.644s] -- Up-to-date: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/local_setup.sh
+[1.645s] -- Up-to-date: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/local_setup.zsh
+[1.645s] -- Up-to-date: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/local_setup.dsv
+[1.645s] -- Installing: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/package.dsv
+[1.646s] -- Up-to-date: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/share/ament_index/resource_index/packages/realsense_gazebo_plugin
+[1.646s] -- Up-to-date: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.647s] -- Up-to-date: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/cmake/ament_cmake_export_libraries-extras.cmake
+[1.647s] -- Up-to-date: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/cmake/realsense_gazebo_pluginConfig.cmake
+[1.647s] -- Up-to-date: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/cmake/realsense_gazebo_pluginConfig-version.cmake
+[1.648s] -- Up-to-date: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/package.xml
+[1.925s] Invoked command in '/home/xh339/Desktop/turtlebot_ws/build/realsense_gazebo_plugin' returned '0': /usr/bin/cmake --install /home/xh339/Desktop/turtlebot_ws/build/realsense_gazebo_plugin

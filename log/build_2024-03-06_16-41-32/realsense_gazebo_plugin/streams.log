@@ -1,0 +1,141 @@
+[1.158s] Invoking command in '/home/xh339/Desktop/turtlebot_ws/build/realsense_gazebo_plugin': /usr/bin/cmake /home/xh339/Desktop/turtlebot_ws/src/realsense_gazebo_plugin -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin
+[1.201s] -- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.004s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[2.281s] -- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+[2.422s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.432s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.459s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.502s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.596s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.899s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.916s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.257s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.365s] -- Found FastRTPS: /opt/ros/foxy/include  
+[3.540s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.593s] -- Looking for pthread.h
+[3.825s] -- Looking for pthread.h - found
+[3.826s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.071s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[4.071s] -- Found Threads: TRUE  
+[4.760s] -- Found gazebo_ros: 3.7.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[4.820s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[4.820s] -- Checking for module 'bullet>=2.82'
+[4.876s] --   Found bullet, version 3.05
+[5.375s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[5.580s] -- Found assimp: /usr/include (found version "5.2.0") 
+[5.661s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[5.747s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[5.794s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[5.813s] -- Looking for ignition-math6 -- found version 6.15.1
+[5.847s] -- Searching for dependencies of ignition-math6
+[5.859s] -- Looking for OGRE...
+[5.860s] -- OGRE_PREFIX_WATCH changed.
+[5.868s] -- Checking for module 'OGRE'
+[5.900s] --   Found OGRE, version 1.9.0
+[5.996s] -- Found Ogre Ghadamon (1.9.0)
+[6.019s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[6.040s] -- Looking for OGRE_Paging...
+[6.067s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[6.067s] -- Looking for OGRE_Terrain...
+[6.092s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[6.093s] -- Looking for OGRE_Property...
+[6.133s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[6.134s] -- Looking for OGRE_RTShaderSystem...
+[6.170s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[6.170s] -- Looking for OGRE_Volume...
+[6.190s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[6.190s] -- Looking for OGRE_Overlay...
+[6.222s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[6.610s] -- Looking for ignition-math6 -- found version 6.15.1
+[6.621s] -- Looking for ignition-transport8 -- found version 8.2.1
+[6.622s] -- Searching for dependencies of ignition-transport8
+[6.663s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[6.687s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[6.699s] -- Checking for module 'libzmq >= 4'
+[6.734s] --   Found libzmq , version 4.3.4
+[6.818s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[6.842s] -- Checking for module 'uuid'
+[6.890s] --   Found uuid, version 2.37.2
+[6.973s] -- Found UUID: TRUE  
+[6.982s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[6.982s] -- Searching for dependencies of ignition-msgs5
+[7.020s] -- Looking for ignition-math6 -- found version 6.15.1
+[7.031s] -- Checking for module 'tinyxml2'
+[7.067s] --   Found tinyxml2, version 9.0.0
+[7.148s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[7.152s] -- Looking for ignition-common3 -- found version 3.14.0
+[7.160s] -- Searching for dependencies of ignition-common3
+[7.162s] -- Looking for dlfcn.h - found
+[7.166s] -- Looking for libdl - found
+[7.169s] -- Found DL: TRUE  
+[7.196s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+[7.197s] -- Searching for <ignition-common3> component [graphics]
+[7.205s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[7.207s] -- Searching for dependencies of ignition-common3-graphics
+[7.208s] -- Looking for ignition-math6 -- found version 6.15.1
+[7.219s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[7.221s] -- Searching for dependencies of ignition-fuel_tools4
+[7.415s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[7.433s] -- Checking for module 'jsoncpp'
+[7.458s] --   Found jsoncpp, version 1.9.5
+[7.531s] -- Found JSONCPP: TRUE  
+[7.542s] -- Checking for module 'libzip'
+[7.568s] --   Found libzip, version 1.7.3
+[7.628s] -- Found ZIP: TRUE  
+[7.629s] -- Looking for ignition-common3 -- found version 3.14.0
+[7.630s] -- Looking for ignition-math6 -- found version 6.15.1
+[7.630s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[7.638s] -- Gazebo version: 11.10
+[7.639s] -- Checking for module 'tbb'
+[7.659s] --   Found tbb, version 2021.5.0
+[7.732s] -- Found image_transport: 3.1.8 (/opt/ros/humble/share/image_transport/cmake)
+[8.091s] -- Found camera_info_manager: 3.1.8 (/opt/ros/humble/share/camera_info_manager/cmake)
+[8.213s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[8.418s] -- Added test 'copyright' to check source files copyright and LICENSE
+[8.422s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[8.423s] -- Configured cppcheck include dirs: /home/xh339/Desktop/turtlebot_ws/src/realsense_gazebo_plugin/include
+[8.423s] -- Configured cppcheck exclude dirs and/or files: 
+[8.426s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[8.427s] -- Configured cpplint exclude dirs and/or files: 
+[8.428s] -- Added test 'lint_cmake' to check CMake code style
+[8.432s] -- Added test 'uncrustify' to check C / C++ code style
+[8.432s] -- Configured uncrustify additional arguments: 
+[8.433s] -- Added test 'xmllint' to check XML markup files
+[8.439s] -- Configuring done
+[8.484s] -- Generating done
+[8.490s] -- Build files have been written to: /home/xh339/Desktop/turtlebot_ws/build/realsense_gazebo_plugin
+[8.539s] Invoked command in '/home/xh339/Desktop/turtlebot_ws/build/realsense_gazebo_plugin' returned '0': /usr/bin/cmake /home/xh339/Desktop/turtlebot_ws/src/realsense_gazebo_plugin -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin
+[8.544s] Invoking command in '/home/xh339/Desktop/turtlebot_ws/build/realsense_gazebo_plugin': /usr/bin/cmake --build /home/xh339/Desktop/turtlebot_ws/build/realsense_gazebo_plugin -- -j8 -l8
+[8.624s] [ 66%] [32mBuilding CXX object CMakeFiles/realsense_gazebo_plugin.dir/src/RealSensePlugin.cpp.o[0m
+[8.624s] [ 66%] [32mBuilding CXX object CMakeFiles/realsense_gazebo_plugin.dir/src/gazebo_ros_realsense.cpp.o[0m
+[55.838s] [100%] [32m[1mLinking CXX shared library librealsense_gazebo_plugin.so[0m
+[57.282s] [100%] Built target realsense_gazebo_plugin
+[57.296s] Invoked command in '/home/xh339/Desktop/turtlebot_ws/build/realsense_gazebo_plugin' returned '0': /usr/bin/cmake --build /home/xh339/Desktop/turtlebot_ws/build/realsense_gazebo_plugin -- -j8 -l8
+[57.349s] Invoking command in '/home/xh339/Desktop/turtlebot_ws/build/realsense_gazebo_plugin': /usr/bin/cmake --install /home/xh339/Desktop/turtlebot_ws/build/realsense_gazebo_plugin
+[57.359s] -- Install configuration: ""
+[57.359s] -- Installing: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/lib/librealsense_gazebo_plugin.so
+[57.364s] -- Set runtime path of "/home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/lib/librealsense_gazebo_plugin.so" to ""
+[57.364s] -- Installing: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/include/
+[57.364s] -- Installing: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/include//realsense_gazebo_plugin
+[57.364s] -- Installing: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/include//realsense_gazebo_plugin/gazebo_ros_realsense.hpp
+[57.364s] -- Installing: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/include//realsense_gazebo_plugin/RealSensePlugin.hpp
+[57.364s] -- Installing: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/environment/library_path.sh
+[57.364s] -- Installing: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/environment/library_path.dsv
+[57.365s] -- Installing: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/share/ament_index/resource_index/package_run_dependencies/realsense_gazebo_plugin
+[57.365s] -- Installing: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/share/ament_index/resource_index/parent_prefix_path/realsense_gazebo_plugin
+[57.365s] -- Installing: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/environment/ament_prefix_path.sh
+[57.365s] -- Installing: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/environment/ament_prefix_path.dsv
+[57.365s] -- Installing: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/environment/path.sh
+[57.365s] -- Installing: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/environment/path.dsv
+[57.365s] -- Installing: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/local_setup.bash
+[57.365s] -- Installing: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/local_setup.sh
+[57.365s] -- Installing: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/local_setup.zsh
+[57.365s] -- Installing: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/local_setup.dsv
+[57.365s] -- Installing: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/package.dsv
+[57.365s] -- Installing: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/share/ament_index/resource_index/packages/realsense_gazebo_plugin
+[57.366s] -- Installing: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/cmake/ament_cmake_export_include_directories-extras.cmake
+[57.366s] -- Installing: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/cmake/ament_cmake_export_libraries-extras.cmake
+[57.366s] -- Installing: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/cmake/realsense_gazebo_pluginConfig.cmake
+[57.366s] -- Installing: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/cmake/realsense_gazebo_pluginConfig-version.cmake
+[57.366s] -- Installing: /home/xh339/Desktop/turtlebot_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/package.xml
+[57.368s] Invoked command in '/home/xh339/Desktop/turtlebot_ws/build/realsense_gazebo_plugin' returned '0': /usr/bin/cmake --install /home/xh339/Desktop/turtlebot_ws/build/realsense_gazebo_plugin
