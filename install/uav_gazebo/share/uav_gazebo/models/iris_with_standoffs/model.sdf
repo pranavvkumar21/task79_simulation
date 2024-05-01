@@ -1,0 +1,232 @@
+<?xml version='1.0'?>
+<sdf version='1.5'>
+  <model name='iris'>
+    <pose>0 0 0.194923 0 0 0</pose>
+
+    <link name="base_footprint"/>
+
+    <link name='base_link'>
+      <velocity_decay>
+        <linear>0.0</linear>
+        <angular>0.0</angular>
+      </velocity_decay>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>1.5</mass>
+        <inertia>
+          <ixx>0.008</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.015</iyy>
+          <iyz>0</iyz>
+          <izz>0.017</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_link_collision'>
+        <pose>0 0 -0.08 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.47 0.47 0.23</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode>
+              <max_vel>100.0</max_vel>
+              <min_depth>0.001</min_depth>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>100000.0</mu>
+              <mu2>100000.0</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='base_link_visual'>
+        <geometry>
+          <mesh>
+            <uri>model://iris_with_standoffs/meshes/iris.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+          </script>
+        </material>
+      </visual>
+
+      <visual name='front_left_leg_visual'>
+        <pose>0.123 0.22 -0.11 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.005</radius>
+            <length>0.17</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/FlatBlack</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='front_right_leg_visual'>
+        <pose>0.123 -0.22 -0.11 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.005</radius>
+            <length>0.17</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/FlatBlack</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='rear_left_leg_visual'>
+        <pose>-0.140 0.21 -0.11 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.005</radius>
+            <length>0.17</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/FlatBlack</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='rear_right_leg_visual'>
+        <pose>-0.140 -0.21 -0.11 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.005</radius>
+            <length>0.17</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/FlatBlack</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+    </link>
+
+    <joint name="base_joint" type="fixed">
+      <parent>base_footprint</parent>
+      <child>base_link</child>
+      <pose>0.0 0.0 0.010 0 0 0</pose>
+    </joint>
+
+    <!--Odometry-->
+    <link name='odom'>
+      <pose>0 0 0 0 -0 0</pose> 
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1e-02</mass>
+        <inertia>
+          <ixx>0.0002</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0002</iyy>
+          <iyz>0</iyz>
+          <izz>0.0002</izz>
+        </inertia>
+      </inertial>
+    </link>
+    
+    <joint name='odom_joint' type='fixed'>
+      <child>base_footprint</child>
+      <parent>odom</parent>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
+        </limit>
+        <!-- <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics> -->
+        <!-- <use_parent_model_frame>1</use_parent_model_frame> -->
+      </axis>
+    </joint>
+
+    <plugin name="ground_truth" filename="libgazebo_ros_p3d.so">
+      <alwaysOn>true</alwaysOn>
+      <!-- Update rate in Hz, defaults to 0.0, which means as fast as possible -->
+      <updateRate>50.0</updateRate>
+      <!-- Name of the link within this model whose pose will be published -->
+      <body_name>base_footprint</body_name>
+      <topicName>odom</topicName>
+      <!-- Standard deviation of the noise to be added to the reported velocities. -->
+      <gaussian_noise>0.01</gaussian_noise>
+      <!-- Name of another link within this model to use as a reference frame-->
+      <frame_name>odom</frame_name>
+      <!-- Translation offset to be added to the pose. -->
+      <xyz_offset>0 0 0</xyz_offset>
+      <!-- Rotation offset to be added to the pose, in Euler angles. -->
+      <rpy_offset>0 0 0</rpy_offset>
+    </plugin>
+    <!-- <sensor name="my_gps" type="gps"> -->
+      <!-- ensure the sensor is active (required) -->
+      <!-- <always_on>true</always_on>
+      <update_rate>30</update_rate>
+      <plugin name="my_gps_plugin" filename="libgazebo_ros_gps_sensor.so">
+        <ros> -->
+          <!-- publish to /gps/data -->
+          <!-- <namespace>/gps</namespace>
+          <remapping>~/out:=data</remapping>
+          <remapping>~/vel:=velocity</remapping>
+        </ros>
+      </plugin>
+    </sensor> -->
+
+<!--
+    <link name='iris/imugt_link'>
+      <pose>0 0 0 0 -0 0</pose> 
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>1e-02</mass>
+        <inertia>
+          <ixx>0.0002</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0002</iyy>
+          <iyz>0</iyz>
+          <izz>0.0002</izz>
+        </inertia>
+      </inertial>
+    </link>
+    
+    <joint name='iris/imugt_joint' type='revolute'>
+      <child>iris/imugt_link</child>
+      <parent>base_link</parent>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+-->
+
+  </model>
+</sdf>

@@ -1,0 +1,9 @@
+/home/xh339/Desktop/turtlebot_ws/build/uav_gazebo/CMakeFiles/uninstall.dir
+/home/xh339/Desktop/turtlebot_ws/build/uav_gazebo/CMakeFiles/uav_gazebo_uninstall.dir
+/home/xh339/Desktop/turtlebot_ws/build/uav_gazebo/CMakeFiles/test.dir
+/home/xh339/Desktop/turtlebot_ws/build/uav_gazebo/CMakeFiles/edit_cache.dir
+/home/xh339/Desktop/turtlebot_ws/build/uav_gazebo/CMakeFiles/rebuild_cache.dir
+/home/xh339/Desktop/turtlebot_ws/build/uav_gazebo/CMakeFiles/list_install_components.dir
+/home/xh339/Desktop/turtlebot_ws/build/uav_gazebo/CMakeFiles/install.dir
+/home/xh339/Desktop/turtlebot_ws/build/uav_gazebo/CMakeFiles/install/local.dir
+/home/xh339/Desktop/turtlebot_ws/build/uav_gazebo/CMakeFiles/install/strip.dir

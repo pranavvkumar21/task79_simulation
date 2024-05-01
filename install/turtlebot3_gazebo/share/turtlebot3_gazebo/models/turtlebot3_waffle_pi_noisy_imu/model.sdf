@@ -502,7 +502,7 @@
 
     <link name="camera_link"/>
 
-    <link name="camera_rgb_optical_frame">
+    <link name="camera_color_optical_frame">
       <inertial>
         <pose>0.076 0.0 0.093 0 0 0</pose>
         <inertia>
@@ -617,7 +617,7 @@
 
     <joint name="camera_rgb_joint" type="fixed">
       <parent>camera_link</parent>
-      <child>camera_rgb_optical_frame</child>
+      <child>camera_color_optical_frame</child>
       <pose>0.003 0.011 0.009 0 0 0</pose>
       <axis>
         <xyz>0 0 1</xyz>
