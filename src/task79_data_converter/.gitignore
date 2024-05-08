@@ -1,0 +1,9 @@
+# Ignoring py cache
+**/__pycache__/
+*.pyc
+# Ignoring data files
+*.csv
+*.asc
+# Ignoring log files (except the log folder readme)
+log/**
+!log/log_management.md

@@ -1,0 +1,231 @@
+# ---- Startup dataset config ----
+#
+# Warning: column numbers start from 1
+
+formatted_data_conversion_node:
+  ros__parameters:
+
+    sensor_datasets:
+      DVL:
+        VELOCITY_SOURCE:
+          file_type: 'csv'
+          file_basename: 'DVL'
+          velocity_frame: 'SNAME'
+          metadata_row_total: 1
+          timestamp: 
+            col: 1
+            unit: 'UNIX'
+            time_standard: 'UTC'
+          surge: 
+            col: 8
+            unit: 'M/S'
+          sway: 
+            col: 9
+            unit: 'M/S'
+          heave: 
+            col: 10
+            unit: 'M/S'
+          covariance: 
+            col: 'UNDEFINED'
+            unit: 'UNDEFINED'
+      INS_FREE_INERTIAL:
+        POSITION_SOURCE:
+          file_type: 'asc'
+          file_basename: 'INS_FI_POS'
+          metadata_row_total: 5
+          date: 
+            col: 1
+            unit: 'YYYYMMDD'
+          timestamp: 
+            col: 2
+            unit: 'HHMMSS.SS'
+            time_standard: 'UTC'
+          latitude: 
+            col: 3
+            unit: 'DD.DDDD'
+          longitude: 
+            col: 4
+            unit: 'DD.DDDD'
+          depth: 
+            col: 5
+            unit: 'M'
+          covariance: 
+            col: 'UNDEFINED'
+            unit: 'UNDEFINED'
+        ATTITUDE_SOURCE:
+          file_type: 'asc'
+          file_basename: 'INS_FI_ATT'
+          metadata_row_total: 5
+          attitude_frame: 'NED'
+          date: 
+            col: 1
+            unit: 'YYYYMMDD'
+          timestamp: 
+            col: 2
+            unit: 'HHMMSS.SS'
+            time_standard: 'UTC'
+          roll: 
+            col: 3
+            unit: 'DEG'
+          pitch: 
+            col: 4
+            unit: 'DEG'
+          heading: 
+            col: 5
+            unit: 'DEG'
+          covariance: 
+            col: 'UNDEFINED'
+            unit: 'UNDEFINED'
+      INS_FULLY_AIDED:
+        POSITION_SOURCE:
+          file_type: 'asc'
+          file_basename: 'INS_FA_POS'
+          metadata_row_total: 5
+          date: 
+            col: 1
+            unit: 'YYYYMMDD'
+          timestamp: 
+            col: 2
+            unit: 'HHMMSS.SS'
+            time_standard: 'UTC'
+          latitude: 
+            col: 3
+            unit: 'DD.DDDD'
+          longitude: 
+            col: 4
+            unit: 'DD.DDDD'
+          depth: 
+            col: 5
+            unit: 'M'
+          covariance: 
+            col: 'UNDEFINED'
+            unit: 'UNDEFINED'
+        ATTITUDE_SOURCE:
+          file_type: 'asc'
+          file_basename: 'INS_FA_ATT'
+          metadata_row_total: 5
+          attitude_frame: 'NED'
+          date: 
+            col: 1
+            unit: 'YYYYMMDD'
+          timestamp: 
+            col: 2
+            unit: 'HHMMSS.SS'
+            time_standard: 'UTC'
+          roll: 
+            col: 3
+            unit: 'DEG'
+          pitch: 
+            col: 4
+            unit: 'DEG'
+          heading: 
+            col: 5
+            unit: 'DEG'
+          covariance:
+            col: 'UNDEFINED'
+            unit: 'UNDEFINED'
+      GPS:
+        POSITION_SOURCE:
+          file_type: 'csv'
+          file_basename: 'GPS'
+          metadata_row_total: 2
+          nmea_format: 
+            col: 2
+            unit: 'STRING'
+          date: 
+            col: 17
+            unit: 'YYYYMMDD'
+          timestamp: 
+            col: 3
+            unit: 'HHMMSS.SS'
+            time_standard: 'UTC'
+          latitude:
+            col: 4
+            unit: 'DDMM.MM'
+          latitude_direction:
+            col: 5
+            unit: 'STRING'
+          longitude:
+            col: 6
+            unit: 'DDDMM.MM'
+          longitude_direction:
+            col: 7
+            unit: 'STRING'
+          altitude:
+            col: 11
+            unit: 'OTHER_COL'
+          altitude_unit:
+            col: 12
+            unit: 'STRING'
+          covariance: 
+            col: 'UNDEFINED'
+            unit: 'UNDEFINED'
+      LBL:
+        POSITION_SOURCE:
+          file_type: 'csv'
+          file_basename: 'LBL'
+          metadata_row_total: 2
+          nmea_format: 
+            col: 2
+            unit: 'STRING'
+          date: 
+            col: 17
+            unit: 'YYYYMMDD'
+          timestamp: 
+            col: 3
+            unit: 'HHMMSS.SS'
+            time_standard: 'UTC'
+          latitude:
+            col: 4
+            unit: 'DDMM.MM'
+          latitude_direction:
+            col: 5
+            unit: 'STRING'
+          longitude:
+            col: 6
+            unit: 'DDDMM.MM'
+          longitude_direction:
+            col: 7
+            unit: 'STRING'
+          altitude:
+            col: 11
+            unit: 'OTHER_COL'
+          altitude_unit:
+            col: 12
+            unit: 'STRING'
+          covariance: 
+            col: 'UNDEFINED'
+            unit: 'UNDEFINED'
+      USBL:
+        POSITION_SOURCE:
+          file_type: 'csv'
+          file_basename: 'USBL'
+          metadata_row_total: 2
+          nmea_format:
+            col: 2
+            unit: 'STRING'
+          date: 
+            col: 17
+            unit: 'YYYYMMDD'
+          timestamp: 
+            col: 3
+            unit: 'HHMMSS.SS'
+            time_standard: 'UTC'
+          coordinate_system:
+            col: 7
+            unit: 'STRING'
+          orientation:
+            col: 8
+            unit: 'STRING'
+          x_coordinate:
+            col: 10
+            unit: 'STRING'
+          y_coordinate:
+            col: 11
+            unit: 'STRING'
+          depth:
+            col: 12
+            unit: 'M'
+          covariance: 
+            col: 'UNDEFINED'
+            unit: 'UNDEFINED'

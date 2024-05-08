@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+    <name>task79_data_converter</name>
+    <version>2.0.0</version>
+    <description>Mission Data Conversion Module for Progeny Task 79</description>
+    <maintainer email="achille.martin@noc.ac.uk">Achille MARTIN</maintainer>
+    <license>NOC</license>
+
+    <!-- Dependencies on msg definitions -->
+    <exec_depend>task79_interfaces</exec_depend>
+    <exec_depend>geometry_msgs</exec_depend>
+
+    <!-- Dependencies on ros 2 launcher -->
+    <exec_depend>ros2launch</exec_depend>
+
+    <!-- Standard python test dependencies -->
+    <test_depend>ament_copyright</test_depend>
+    <test_depend>ament_flake8</test_depend>
+    <test_depend>ament_pep257</test_depend>
+    <test_depend>python3-pytest</test_depend>
+
+    <export>
+        <build_type>ament_python</build_type>
+    </export>
+</package>

@@ -1,0 +1,9 @@
+# ---- Startup module config ----
+
+configuration_manager_node:  
+  ros__parameters:
+    
+    module:
+      node_spin_frequency_hz: 1.0
+      sensor_data_folder: 'data/mission_data/test_9'
+      is_aiding_data_grouped: False

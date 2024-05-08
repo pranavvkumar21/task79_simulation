@@ -1,0 +1,30 @@
+# ---- Startup sensor config ----
+
+configuration_manager_node:  
+  ros__parameters:
+    
+    sensors:
+      '0':
+        sensor_type: 'DVL'
+        sensor_covariance: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+        is_sensor_enabled: True
+      '1':
+        sensor_type: 'INS_FREE_INERTIAL'
+        sensor_covariance: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+        is_sensor_enabled: True
+      '2':
+        sensor_type: 'INS_FULLY_AIDED'
+        sensor_covariance: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+        is_sensor_enabled: False
+      '3':
+        sensor_type: 'GPS'
+        sensor_covariance: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+        is_sensor_enabled: False
+      '4':
+        sensor_type: 'LBL'
+        sensor_covariance: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+        is_sensor_enabled: False
+      '5':
+        sensor_type: 'USBL'
+        sensor_covariance: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+        is_sensor_enabled: False

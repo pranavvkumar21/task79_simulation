@@ -1,0 +1,34 @@
+<!-- Task79 data converter (main) launch file -->
+
+<launch>
+
+    <!-- Argument definition -->
+    <arg name="startup_sensor_config_file" default="$(find-pkg-share task79_data_converter)/config/startup_sensor_config.yaml"/>
+    <arg name="startup_module_config_file" default="$(find-pkg-share task79_data_converter)/config/startup_module_config.yaml"/>
+    <arg name="startup_dataset_config_file" default="$(find-pkg-share task79_data_converter)/config/startup_dataset_config.yaml"/>
+    <!-- Defining node startup delay
+         to ensure that the nodes
+         have enough time to initialise independently -->
+    <arg name="node_start_delay_s" default="5.0"/>
+        
+    <!-- Node management -->
+    <!-- Starting Formatted Data Conversion node first -->
+    <node 
+        pkg="task79_data_converter" 
+        exec="formatted_data_converter" 
+        name="formatted_data_conversion_node"
+        output="both">
+        <param from="$(var startup_dataset_config_file)"/>
+    </node>
+    <!-- Starting Configuration Manager node afterwards -->
+    <node 
+        pkg="task79_data_converter" 
+        exec="configuration_manager" 
+        name="configuration_manager_node"
+        output="both"
+        launch-prefix="bash -c 'sleep $(var node_start_delay_s); $0 $@'">
+        <param from="$(var startup_module_config_file)"/>
+        <param from="$(var startup_sensor_config_file)"/>
+    </node>
+
+</launch>
