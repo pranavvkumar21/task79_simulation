@@ -1,0 +1,4 @@
+string context
+string sensor_topic
+---
+string success
