@@ -1,0 +1,3 @@
+float64 node_spin_frequency_hz
+string sensor_data_folder
+bool is_aiding_data_grouped
