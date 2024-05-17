@@ -2141,8 +2141,8 @@ class FormattedDataConverter(Node):
                     abs_value = abs(value_to_convert)
                     # Tip: conserve leading zeros
                     abs_value_str = f'{abs_value:0>14.9f}' 
-                    dd = int(str(abs_value)[:2])
-                    mm = float(str(abs_value)[2:])
+                    dd = int(str(abs_value_str)[:2])
+                    mm = float(str(abs_value_str)[2:])
                     converted_value = \
                         value_sign * (dd + mm/60)
             
@@ -2155,7 +2155,7 @@ class FormattedDataConverter(Node):
                     # Tip: conserve leading zeros
                     abs_value_str = f'{abs_value:0>15.9f}' 
                     dd = int(abs_value_str[:3])
-                    mm = float(str(abs_value)[3:])
+                    mm = float(str(abs_value_str)[3:])
                     converted_value = \
                         value_sign * (dd + mm/60)
 
