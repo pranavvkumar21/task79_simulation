@@ -152,3 +152,10 @@ Each sensor source is tied to a dataset. The filename and type are defined for e
 
 The python script uses handy functions inside classes to handle singular and useful tasks. Make use of them.
 
+### How to analyse mission data
+
+There are 2 scripts provided to analyse mission data:
+
+* `task79_data_converter/tools/data_analysis/plot_analysis.py` to get an overview of the mission data collected by the vehicles
+
+* `task79_data_converter/tools/data_analysis/performance_degradation_analysis_plot.py` to identify performance degradation models of sensors. Each sensor is subject to environmental disturbance and that is captured via performance degradation models used by the "perception module" of the MPF.
