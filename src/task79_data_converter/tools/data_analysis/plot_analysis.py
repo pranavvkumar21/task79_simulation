@@ -2,6 +2,7 @@
 
 import matplotlib.pyplot as plt
 import pandas as pd
+import numpy as np
 import os
 import sys
 
@@ -36,13 +37,13 @@ def main():
     # Rename columns for practicality
     gps_data.columns = ['lat', 'lon']
 
-    # Force expression of lat at N and lon as E
+    # Force expression of lat as N and lon as E
     gps_data['lon'] = [-elem for elem in gps_data['lon']]
     
     # Prepare plot overall GPS data
     fig_gps = plt.figure() 
     plt.title(f"GPS data from {gps_dataset_file_path}")
-    plt.plot(pd.array(gps_data['lon']), pd.array(gps_data['lat']))
+    plt.plot(np.array(gps_data['lon']), np.array(gps_data['lat']))
     plt.xlabel("Longitude (DM - East)")
     plt.ylabel("Latitude (DM - North)")
     plt.grid()
@@ -66,18 +67,18 @@ def main():
     plt.title(f"DVL data from {dvl_dataset_file_path}")
     
     ax1 = plt.subplot(3, 1, 1)
-    plt.plot(pd.array(dvl_data['timestamp']), pd.array(dvl_data['surge']))
+    plt.plot(np.array(dvl_data['timestamp']), np.array(dvl_data['surge']))
     plt.xlabel("Timestamp (UNIX - UTC)")
     plt.ylabel("Surge (m/s)")
     plt.grid()
 
     ax2 = plt.subplot(3, 1, 2, sharex=ax1)
-    plt.plot(pd.array(dvl_data['timestamp']), pd.array(dvl_data['sway']))
+    plt.plot(np.array(dvl_data['timestamp']), np.array(dvl_data['sway']))
     plt.ylabel("Sway (m/s)")
     plt.grid()
     
     ax3 = plt.subplot(3, 1, 3, sharex=ax1)
-    plt.plot(pd.array(dvl_data['timestamp']), pd.array(dvl_data['heave']))
+    plt.plot(np.array(dvl_data['timestamp']), np.array(dvl_data['heave']))
     plt.ylabel("Heave (m/s)")
     plt.grid()
 
