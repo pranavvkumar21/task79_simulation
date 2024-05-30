@@ -55,6 +55,6 @@ ros2 run turtlebot3_teleop teleop_keyboard
 
 This ROS2 package contains the Mission Data Conversion Module aimed at converting mission data obtained from vehicle runs, into MPF-compliant inputs for testing purposes.
 
-The package contains its own [README.md](task79_data_converter/README.md), as it can be used as a standalone module if desired.
+The package contains its own [README.md](src/task79_data_converter/README.md), as it can be used as a standalone module if desired.
 
 _Note that `task79_data_converter` depends on `task79_interfaces` for its communication interface definitions._
