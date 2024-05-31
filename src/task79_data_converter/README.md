@@ -8,15 +8,14 @@ The strategy used for validation is to convert collected mission data to feed an
 
 ### Requirements
 
-The requirements for this module are gathered [on Sharepoint](https://nocacuk.sharepoint.com/:w:/r/sites/NOCMARSTeam/Shared%20Documents/MARS%20On-board%20Control%20Software/NOCS%20Documentation/OCS%20Simulation/ROS%20NOCS%20Simulation/Simulation%20Work/Progeny%20Task%2079%20OCSv3%20%5BApril%202024%5D/Mission%20Data%20Conversion%20Module%20for%20MPF%20-%20Progeny.docx?d=wa4dc5a4567b34af88024cf7da7843de4&csf=1&web=1&e=3LGwPV).
+The requirements for this module are gathered on Kahootz.
 
 ### Design
 
-The design is based on [PlantUML diagrams](https://nocacuk.sharepoint.com/:f:/r/sites/NOCMARSTeam/Shared%20Documents/MARS%20On-board%20Control%20Software/NOCS%20Documentation/OCS%20Simulation/ROS%20NOCS%20Simulation/Simulation%20Work/Progeny%20Task%2079%20OCSv3%20%5BApril%202024%5D/resources/diagrams?csf=1&web=1&e=d3JgkC) describing the interactions between involved entities.
-
+The design is based on PlantUML diagrams which can be found in the documentation on Kahootz.
 ### Implementation
 
-The implemenation is contained in [this repo](https://github.com/pranavvkumar21/task79).
+The implemenation is contained in [this repo](https://github.com/pranavvkumar21/task79_simulation/tree/main/src/task79_data_converter).
 
 ## Notations
 
@@ -34,9 +33,9 @@ For instance, confirm that you can run:
 ros2 --help
 ```
 
-* Clone [this repo](https://github.com/pranavvkumar21/task79) onto your machine in your ROS2 workspace (for instance, directly under `src/`)
+* Clone [this repo](https://github.com/pranavvkumar21/task79_simulation) onto your machine in your ROS2 workspace (for instance, directly under `src/`)
 
-* Verify all the pre-requisites listed in root of the repo you downloaded: have a look at the [root README](https://github.com/pranavvkumar21/task79/blob/main/README.md)
+* Verify all the pre-requisites listed in root of the repo you downloaded: have a look at the [root README](https://github.com/pranavvkumar21/task79_simulation/blob/main/README.md)
 
 * Install the extra required Python packages with:
 
