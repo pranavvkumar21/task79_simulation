@@ -474,7 +474,6 @@ def main():
     axs_2D_traj.set_ylabel("Northings (m)")
     axs_2D_traj.legend(loc="upper right")
     axs_2D_traj.grid()
-    plt.get_current_fig_manager().window.showMaximized()
 
     print(
         f"""
@@ -600,7 +599,6 @@ def main():
     
     ## Maximise plot and adjust margins
     plt.subplots_adjust(hspace=0.35)
-    plt.get_current_fig_manager().window.showMaximized()
 
     # ---------- Plot navigation performance degradation theories for USBL ----------
     ## Setup window and plot
@@ -670,7 +668,6 @@ def main():
     axs_usbl_nav_perf_degr.set_ylabel("Distance error GPS vs USBL (m)")
     axs_usbl_nav_perf_degr.legend(loc="upper right")
     axs_usbl_nav_perf_degr.grid()
-    plt.get_current_fig_manager().window.showMaximized()
      
     # ---------- Plot navigation performance comparison GPS vs LBL ----------
     ## Setup window and plot
@@ -789,7 +786,6 @@ def main():
     
     ## Maximise plot and adjust margins
     plt.subplots_adjust(hspace=0.35)
-    plt.get_current_fig_manager().window.showMaximized()
     
     # ---------- Plot navigation performance degradation theories for LBL ----------
     ## Setup window and plot
@@ -859,7 +855,6 @@ def main():
     axs_lbl_nav_perf_degr.set_ylabel("Distance error GPS vs LBL (m)")
     axs_lbl_nav_perf_degr.legend(loc="upper right")
     axs_lbl_nav_perf_degr.grid()
-    plt.get_current_fig_manager().window.showMaximized()
 
     # ---------- Plot navigation performance degradation theories for DVL ----------
     ## Setup window and plot
@@ -1133,7 +1128,6 @@ def main():
     axs_dvl_nav_perf_degr[1].set_ylabel("Distance error GPS vs INS (m)")
     axs_dvl_nav_perf_degr[1].legend(loc="upper right")
     axs_dvl_nav_perf_degr[1].grid()
-    plt.get_current_fig_manager().window.showMaximized()
 
     # Display plots
     plt.show()
