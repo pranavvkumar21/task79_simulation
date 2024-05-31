@@ -33,7 +33,7 @@ For instance, confirm that you can run:
 ros2 --help
 ```
 
-* Clone [this repo](https://github.com/pranavvkumar21/task79_simulation) onto your machine in your ROS2 workspace (for instance, directly under `src/`)
+* Clone [this repo](https://github.com/pranavvkumar21/task79_simulation/tree/main/src/task79_data_converter) onto your machine in your ROS2 workspace (for instance, directly under `src/`)
 
 * Verify all the pre-requisites listed in root of the repo you downloaded: have a look at the [root README](https://github.com/pranavvkumar21/task79_simulation/blob/main/README.md)
 
